@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{d9191248-ec26-45f3-aaa5-aefc2a3fa13b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Neurons">
+      <UniqueIdentifier>{0c67646d-e70e-47dd-8b98-586ebf7bfabe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layers">
+      <UniqueIdentifier>{32c8ad3c-358d-404b-bbcf-5e71932c1236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActivationFunctions">
+      <UniqueIdentifier>{199eb4cd-563d-4e66-ad34-af488b2c1189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Learning">
+      <UniqueIdentifier>{d9fa2d4d-37ed-402d-a49c-6b0b65a31594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Networks">
+      <UniqueIdentifier>{794013b6-f695-4ac4-9977-756e61f6ad7c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,10 +42,55 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ActivationNeuron.h">
+      <Filter>Neurons</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceNeuron.h">
+      <Filter>Neurons</Filter>
+    </ClInclude>
+    <ClInclude Include="Neuron.h">
+      <Filter>Neurons</Filter>
+    </ClInclude>
+    <ClInclude Include="IActivationFunction.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleRange.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceLayer.h">
+      <Filter>Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivationLayer.h">
+      <Filter>Layers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivationNeuron.cpp">
+      <Filter>Neurons</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceNeuron.cpp">
+      <Filter>Neurons</Filter>
+    </ClCompile>
+    <ClCompile Include="Neuron.cpp">
+      <Filter>Neurons</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleRange.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceLayer.cpp">
+      <Filter>Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivationLayer.cpp">
+      <Filter>Layers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
