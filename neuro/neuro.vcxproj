@@ -128,9 +128,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="ActivationLayer.h" />
     <ClInclude Include="ActivationNeuron.h" />
     <ClInclude Include="BipolarSigmoidFunction.h" />
