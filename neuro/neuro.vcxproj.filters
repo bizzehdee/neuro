@@ -72,6 +72,12 @@
     <ClInclude Include="BipolarSigmoidFunction.h">
       <Filter>ActivationFunctions</Filter>
     </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>Networks</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceNetwork.h">
+      <Filter>Networks</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -106,6 +112,12 @@
     </ClCompile>
     <ClCompile Include="BipolarSigmoidFunction.cpp">
       <Filter>ActivationFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceNetwork.cpp">
+      <Filter>Networks</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
