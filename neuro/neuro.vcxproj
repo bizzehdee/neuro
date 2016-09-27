@@ -133,29 +133,35 @@
   <ItemGroup>
     <ClInclude Include="ActivationLayer.h" />
     <ClInclude Include="ActivationNeuron.h" />
+    <ClInclude Include="BipolarSigmoidFunction.h" />
     <ClInclude Include="DistanceLayer.h" />
     <ClInclude Include="DistanceNeuron.h" />
     <ClInclude Include="DoubleRange.h" />
     <ClInclude Include="IActivationFunction.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="Neuron.h" />
+    <ClInclude Include="SigmoidFunction.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThresholdFunction.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ActivationLayer.cpp" />
     <ClCompile Include="ActivationNeuron.cpp" />
+    <ClCompile Include="BipolarSigmoidFunction.cpp" />
     <ClCompile Include="DistanceLayer.cpp" />
     <ClCompile Include="DistanceNeuron.cpp" />
     <ClCompile Include="DoubleRange.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="Neuron.cpp" />
+    <ClCompile Include="SigmoidFunction.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ThresholdFunction.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

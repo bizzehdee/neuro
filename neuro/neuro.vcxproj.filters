@@ -66,6 +66,15 @@
     <ClInclude Include="ActivationLayer.h">
       <Filter>Layers</Filter>
     </ClInclude>
+    <ClInclude Include="ThresholdFunction.h">
+      <Filter>ActivationFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="SigmoidFunction.h">
+      <Filter>ActivationFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="BipolarSigmoidFunction.h">
+      <Filter>ActivationFunctions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -91,6 +100,15 @@
     </ClCompile>
     <ClCompile Include="ActivationLayer.cpp">
       <Filter>Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="ThresholdFunction.cpp">
+      <Filter>ActivationFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="SigmoidFunction.cpp">
+      <Filter>ActivationFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="BipolarSigmoidFunction.cpp">
+      <Filter>ActivationFunctions</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
