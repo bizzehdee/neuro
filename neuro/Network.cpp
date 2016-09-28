@@ -33,3 +33,8 @@ void neuro::Network::Randomize()
 		this->layers[x]->Randomize();
 	}
 }
+
+neuro::Layer * neuro::Network::Layers(const int index)
+{
+	return this->layers[index];
+}

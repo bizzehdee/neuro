@@ -14,6 +14,7 @@ namespace neuro {
 		double *Output() const { return this->output; }
 
 		neuro::Neuron *operator[] (const int index);
+		neuro::Neuron *Neurons(const int index);
 
 		virtual double* Compute(double* input);
 		virtual void Randomize();

@@ -87,6 +87,9 @@
     <ClInclude Include="IUnsupervisedLearning.h">
       <Filter>Core</Filter>
     </ClInclude>
+    <ClInclude Include="ElasticNetworkLearning.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -130,6 +133,9 @@
     </ClCompile>
     <ClCompile Include="ActivationNetwork.cpp">
       <Filter>Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="ElasticNetworkLearning.cpp">
+      <Filter>Learning</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

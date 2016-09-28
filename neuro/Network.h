@@ -13,6 +13,8 @@ namespace neuro {
 		virtual double *Compute(double *input);
 		virtual void Randomize();
 
+		Layer *Layers(const int index);
+
 	protected:
 		int inputCount;
 		int layerCount;

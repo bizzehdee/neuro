@@ -19,6 +19,11 @@ neuro::Layer::~Layer()
 
 neuro::Neuron *neuro::Layer::operator[](const int index)
 {
+	return Neurons(index);
+}
+
+neuro::Neuron *neuro::Layer::Neurons(const int index)
+{
 	return this->neurons[index];
 }
 

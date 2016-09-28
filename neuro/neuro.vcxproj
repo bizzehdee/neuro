@@ -136,6 +136,7 @@
     <ClInclude Include="DistanceNetwork.h" />
     <ClInclude Include="DistanceNeuron.h" />
     <ClInclude Include="DoubleRange.h" />
+    <ClInclude Include="ElasticNetworkLearning.h" />
     <ClInclude Include="IActivationFunction.h" />
     <ClInclude Include="ISupervisedLearning.h" />
     <ClInclude Include="IUnsupervisedLearning.h" />
@@ -156,6 +157,7 @@
     <ClCompile Include="DistanceNetwork.cpp" />
     <ClCompile Include="DistanceNeuron.cpp" />
     <ClCompile Include="DoubleRange.cpp" />
+    <ClCompile Include="ElasticNetworkLearning.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="Network.cpp" />
     <ClCompile Include="Neuron.cpp" />
