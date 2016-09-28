@@ -137,6 +137,8 @@
     <ClInclude Include="DistanceNeuron.h" />
     <ClInclude Include="DoubleRange.h" />
     <ClInclude Include="IActivationFunction.h" />
+    <ClInclude Include="ISupervisedLearning.h" />
+    <ClInclude Include="IUnsupervisedLearning.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="Network.h" />
     <ClInclude Include="Neuron.h" />
