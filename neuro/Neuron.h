@@ -2,30 +2,32 @@
 
 #include "DoubleRange.h"
 
-class Neuron
-{
-public:
-	~Neuron();
+namespace neuro {
+	class Neuron
+	{
+	public:
+		~Neuron();
 
-	virtual void Randomize();
-	virtual double Compute(double *input) = 0; // pure virtual
+		virtual void Randomize();
+		virtual double Compute(double *input) = 0; // pure virtual
 
 
-	double Weight(int n) const { return this->weights[n]; }
-	void Weight(int n, const double w) { this->weights[n] = w; }
+		double Weight(int n) const { return this->weights[n]; }
+		void Weight(int n, const double w) { this->weights[n] = w; }
 
-	double Output() const { return this->output; }
+		double Output() const { return this->output; }
 
-	int InputCount() const { return this->inputCount; }
+		int InputCount() const { return this->inputCount; }
 
-protected:
-	Neuron(int inputCount);
+	protected:
+		Neuron(int inputCount);
 
-	int inputCount = 0;
-	double *weights;
-	double output = 0;
+		int inputCount = 0;
+		double *weights;
+		double output = 0;
 
-	DoubleRange *randRange;
+		DoubleRange *randRange;
 
-	inline double Rand() { return (double)rand() / RAND_MAX; }
-};
+		inline double Rand() { return (double)rand() / RAND_MAX; }
+	};
+}

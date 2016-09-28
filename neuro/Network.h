@@ -1,20 +1,23 @@
 #pragma once
 
-class Layer;
+namespace neuro {
 
-class Network
-{
-public:
-	Network(int inputsCount, int layersCount);
-	~Network();
+	class Layer;
 
-	virtual double *Compute(double *input);
-	virtual void Randomize();
+	class Network
+	{
+	public:
+		Network(int inputsCount, int layersCount);
+		~Network();
 
-protected:
-	int inputCount;
-	int layerCount;
-	Layer **layers;
-	double *output;
-};
+		virtual double *Compute(double *input);
+		virtual void Randomize();
 
+	protected:
+		int inputCount;
+		int layerCount;
+		Layer **layers;
+		double *output;
+	};
+
+}

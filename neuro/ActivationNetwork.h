@@ -2,13 +2,14 @@
 
 #include "Network.h"
 
-class IActivationFunction;
+namespace neuro {
+	class IActivationFunction;
 
-class ActivationNetwork :
-	public Network
-{
-public:
-	ActivationNetwork(IActivationFunction *function, int inputsCount, int *neuronCounts);
-	~ActivationNetwork();
-};
-
+	class ActivationNetwork :
+		public Network
+	{
+	public:
+		ActivationNetwork(IActivationFunction *function, int inputsCount, int *neuronCounts);
+		~ActivationNetwork();
+	};
+}

@@ -2,10 +2,12 @@
 
 #include "Neuron.h"
 
-class DistanceNeuron : public Neuron
-{
-public:
-	DistanceNeuron(int inputCount) : Neuron(inputCount) {  }
+namespace neuro {
+	class DistanceNeuron : public Neuron
+	{
+	public:
+		DistanceNeuron(int inputCount) : Neuron(inputCount) {  }
 
-	virtual double Compute(double *input);
-};
+		virtual double Compute(double *input);
+	};
+}

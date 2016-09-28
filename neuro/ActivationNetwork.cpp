@@ -3,7 +3,7 @@
 #include "IActivationFunction.h"
 #include "ActivationLayer.h"
 
-ActivationNetwork::ActivationNetwork(IActivationFunction *function, int inputsCount, int *neuronCounts) :
+neuro::ActivationNetwork::ActivationNetwork(IActivationFunction *function, int inputsCount, int *neuronCounts) :
 	Network(inputsCount, sizeof(neuronCounts) / sizeof(int))
 {
 	for (int i = 0; i < this->layerCount; i++)
@@ -12,7 +12,7 @@ ActivationNetwork::ActivationNetwork(IActivationFunction *function, int inputsCo
 	}
 }
 
-ActivationNetwork::~ActivationNetwork()
+neuro::ActivationNetwork::~ActivationNetwork()
 {
 	for (int i = 0; i < this->layerCount; i++)
 	{

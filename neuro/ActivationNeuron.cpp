@@ -2,19 +2,19 @@
 
 #include "ActivationNeuron.h"
 
-ActivationNeuron::ActivationNeuron(int inputCount, IActivationFunction *activationFunction) : Neuron(inputCount)
+neuro::ActivationNeuron::ActivationNeuron(int inputCount, IActivationFunction *activationFunction) : Neuron(inputCount)
 {
 	this->activationFunction = activationFunction;
 }
 
-void ActivationNeuron::Randomize()
+void neuro::ActivationNeuron::Randomize()
 {
 	Neuron::Randomize();
 
 	threshold = Rand() * randRange->Length() + randRange->Min();
 }
 
-double ActivationNeuron::Compute(double *input) 
+double neuro::ActivationNeuron::Compute(double *input)
 {
 	double sum = 0;
 

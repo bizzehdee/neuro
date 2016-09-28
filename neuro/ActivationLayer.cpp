@@ -2,7 +2,7 @@
 #include "ActivationLayer.h"
 #include "ActivationNeuron.h"
 
-ActivationLayer::ActivationLayer(int neuronCount, int inputCount, IActivationFunction *activationFunction) :
+neuro::ActivationLayer::ActivationLayer(int neuronCount, int inputCount, IActivationFunction *activationFunction) :
 	Layer(neuronCount, inputCount)
 {
 	for (int x = 0; x < this->neuronCount; x++)
@@ -12,7 +12,7 @@ ActivationLayer::ActivationLayer(int neuronCount, int inputCount, IActivationFun
 }
 
 
-ActivationLayer::~ActivationLayer()
+neuro::ActivationLayer::~ActivationLayer()
 {
 	for (int x = 0; x < this->neuronCount; x++)
 	{
@@ -20,7 +20,7 @@ ActivationLayer::~ActivationLayer()
 	}
 }
 
-ActivationNeuron *ActivationLayer::operator[](const int index)
+neuro::ActivationNeuron * neuro::ActivationLayer::operator[](const int index)
 {
 	return (ActivationNeuron *)this->neurons[index];
 }

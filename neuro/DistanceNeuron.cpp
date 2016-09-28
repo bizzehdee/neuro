@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "DistanceNeuron.h"
 
-double DistanceNeuron::Compute(double *input)
+double neuro::DistanceNeuron::Compute(double *input)
 {
 	output = 0;
 

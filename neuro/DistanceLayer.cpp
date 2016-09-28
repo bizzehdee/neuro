@@ -2,7 +2,7 @@
 #include "DistanceLayer.h"
 #include "DistanceNeuron.h"
 
-DistanceLayer::DistanceLayer(int neuronCount, int inputCount) : 
+neuro::DistanceLayer::DistanceLayer(int neuronCount, int inputCount) :
 	Layer(neuronCount, inputCount)
 {
 	for (int x = 0; x < this->neuronCount; x++)
@@ -12,7 +12,7 @@ DistanceLayer::DistanceLayer(int neuronCount, int inputCount) :
 }
 
 
-DistanceLayer::~DistanceLayer()
+neuro::DistanceLayer::~DistanceLayer()
 {
 	for (int x = 0; x < this->neuronCount; x++)
 	{
@@ -20,7 +20,7 @@ DistanceLayer::~DistanceLayer()
 	}
 }
 
-DistanceNeuron *DistanceLayer::operator[](const int index)
+neuro::DistanceNeuron *neuro::DistanceLayer::operator[](const int index)
 {
 	return (DistanceNeuron *)this->neurons[index];
 }

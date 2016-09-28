@@ -2,7 +2,7 @@
 #include "Layer.h"
 #include "Neuron.h"
 
-Layer::Layer(int neuronCount, int inputCount)
+neuro::Layer::Layer(int neuronCount, int inputCount)
 {
 	this->inputCount = MAX(1, inputCount);
 	this->neuronCount = MAX(1, neuronCount);
@@ -11,18 +11,18 @@ Layer::Layer(int neuronCount, int inputCount)
 	this->output = new double[this->neuronCount];
 }
 
-Layer::~Layer()
+neuro::Layer::~Layer()
 {
 	delete this->neurons;
 	delete this->output;
 }
 
-Neuron *Layer::operator[](const int index)
+neuro::Neuron *neuro::Layer::operator[](const int index)
 {
 	return this->neurons[index];
 }
 
-double *Layer::Compute(double *input)
+double *neuro::Layer::Compute(double *input)
 {
 	for (int x = 0; x < this->neuronCount; x++)
 	{
@@ -32,10 +32,10 @@ double *Layer::Compute(double *input)
 	return output;
 }
 
-void Layer::Randomize()
+void neuro::Layer::Randomize()
 {
 	for (int x = 0; x < this->neuronCount; x++)
 	{
-		this[x].Randomize();
+		this->neurons[x]->Randomize();
 	}
 }

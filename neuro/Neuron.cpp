@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Neuron.h"
 
-Neuron::Neuron(int inputCount)
+neuro::Neuron::Neuron(int inputCount)
 {
 	this->inputCount = inputCount;
 	this->weights = new double[this->inputCount];
@@ -13,12 +13,12 @@ Neuron::Neuron(int inputCount)
 }
 
 
-Neuron::~Neuron()
+neuro::Neuron::~Neuron()
 {
 	delete[] this->weights;
 }
 
-void Neuron::Randomize() 
+void neuro::Neuron::Randomize()
 {
 	double d = randRange->Length();
 

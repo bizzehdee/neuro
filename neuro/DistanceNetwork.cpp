@@ -2,19 +2,19 @@
 #include "DistanceNetwork.h"
 #include "DistanceLayer.h"
 
-DistanceNetwork::DistanceNetwork(int inputsCount, int neuronsCount) :
+neuro::DistanceNetwork::DistanceNetwork(int inputsCount, int neuronsCount) :
 	Network(inputsCount, 1)
 {
 	this->layers[0] = new DistanceLayer(neuronsCount, inputsCount);
 }
 
 
-DistanceNetwork::~DistanceNetwork()
+neuro::DistanceNetwork::~DistanceNetwork()
 {
 	delete this->layers[0];
 }
 
-int DistanceNetwork::GetWinner()
+int neuro::DistanceNetwork::GetWinner()
 {
 	double min = output[0];
 	int minIndex = 0;

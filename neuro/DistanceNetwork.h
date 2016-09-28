@@ -1,13 +1,14 @@
 #pragma once
 #include "Network.h"
 
-class DistanceNetwork :
-	public Network
-{
-public:
-	DistanceNetwork(int inputsCount, int neuronsCount);
-	~DistanceNetwork();
+namespace neuro {
+	class DistanceNetwork :
+		public Network
+	{
+	public:
+		DistanceNetwork(int inputsCount, int neuronsCount);
+		~DistanceNetwork();
 
-	int GetWinner();
-};
-
+		int GetWinner();
+	};
+}

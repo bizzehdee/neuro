@@ -1,16 +1,19 @@
 #pragma once
 #include "Layer.h"
 
-class IActivationFunction;
-class ActivationNeuron;
+namespace neuro {
 
-class ActivationLayer :
-	public Layer
-{
-public:
-	ActivationLayer(int neuronCount, int inputCount, IActivationFunction *activationFunction);
-	~ActivationLayer();
+	class IActivationFunction;
+	class ActivationNeuron;
 
-	ActivationNeuron *operator[] (const int index);
-};
 
+	class ActivationLayer :
+		public Layer
+	{
+	public:
+		ActivationLayer(int neuronCount, int inputCount, IActivationFunction *activationFunction);
+		~ActivationLayer();
+
+		ActivationNeuron *operator[] (const int index);
+	};
+}
