@@ -11,11 +11,9 @@ public:
 	virtual double *Compute(double *input);
 	virtual void Randomize();
 
-private:
+protected:
 	int inputCount;
 	int layerCount;
-
-protected:
 	Layer **layers;
 	double *output;
 };

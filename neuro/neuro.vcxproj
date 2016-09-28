@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ActivationLayer.h" />
+    <ClInclude Include="ActivationNetwork.h" />
     <ClInclude Include="ActivationNeuron.h" />
     <ClInclude Include="BipolarSigmoidFunction.h" />
     <ClInclude Include="DistanceLayer.h" />
@@ -146,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ActivationLayer.cpp" />
+    <ClCompile Include="ActivationNetwork.cpp" />
     <ClCompile Include="ActivationNeuron.cpp" />
     <ClCompile Include="BipolarSigmoidFunction.cpp" />
     <ClCompile Include="DistanceLayer.cpp" />

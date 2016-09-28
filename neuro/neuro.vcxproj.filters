@@ -78,6 +78,9 @@
     <ClInclude Include="DistanceNetwork.h">
       <Filter>Networks</Filter>
     </ClInclude>
+    <ClInclude Include="ActivationNetwork.h">
+      <Filter>Networks</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -117,6 +120,9 @@
       <Filter>Networks</Filter>
     </ClCompile>
     <ClCompile Include="DistanceNetwork.cpp">
+      <Filter>Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivationNetwork.cpp">
       <Filter>Networks</Filter>
     </ClCompile>
   </ItemGroup>
